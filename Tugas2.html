@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Tugas 1 - Gallery Gambar</title>
+    <style>
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            padding: 20px;
+        }
+        .gallery-item {
+            flex: 1 1 calc(25% - 30px); 
+            min-width: 200px;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border: 5px solid #ccc;
+            border-radius: 8px;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        .gallery-item img:hover {
+            transform: scale(1.05);
+            border-color: #007bff;
+            cursor: pointer;
+        }
+        @media (max-width: 600px) {
+            .gallery-item {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align: center;">Gallery Gambar Caesar</h2>
+    
+    <div class="gallery-container">
+        <a href="https://www.magnific.com/idn/foto/pantai" class="gallery-item">
+            <img src="beautiful-tropical-beach-sea-with-coconut-palm-tree-paradise-island.jpg" alt="Pemandangan Pantai" title="Pemandangan Pantai">
+            <h3>pantai</h3>
+        </a>
+        <a href="https://www.magnific.com/idn/foto/air-terjun" class="gallery-item">
+            <img src="thi-lo-su-tee-lor-su-tak-province-thi-lo-su-waterfall-largest-waterfall-thailand.jpg" alt="Pemandangan Air Terjun" title="Pemandangan Air Terjun">
+        </a>
+        <a href="https://www.pexels.com/id-id/foto/pemandangan-hutan-hujan-yang-indah-927414/" class="gallery-item">
+            <img src="pexels-arnie-chou-304906-927414.jpg" alt="Pemandangan Hutan" title="Pemandangan Hutan">
+        </a>
+        <a href="https://www.magnific.com/idn/foto/pemandangan-gunung" class="gallery-item">
+            <img src="mountainous-landscape-with-fog.jpg" alt="Pemandangan Gunung" title="Pemandangan Gunung">
+        </a>
+    </div>
+
+</body>
+</html>

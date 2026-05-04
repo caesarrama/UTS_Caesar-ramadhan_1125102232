@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Beli - Kripik Tempe Mbok Eroh</title>
+</head>
+<body bgcolor="#fdf5e6">
+
+    <center>
+        <h1>Formulir Pembelian</h1>
+        <p>
+            <a href="Beranda.html">Beranda</a> | 
+            <a href="Galery.html">Galeri</a> | 
+            <a href="Formulir.html">Beli</a>
+        </p>
+        <hr>
+
+        <!-- Form Dasar -->
+        <form action="#" method="post" enctype="multipart/form-data">
+            <table cellpadding="5">
+                <!-- Input Teks -->
+                <tr>
+                    <td>Nama:</td>
+                    <td><input type="text" name="nama" required></td>
+                </tr>
+                <!-- Input Email -->
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" name="email" required></td>
+                </tr>
+                <!-- Radio Button (Pilih satu) -->
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" name="jk" value="L"> L 
+                        <input type="radio" name="jk" value="P"> P
+                    </td>
+                </tr>
+                <!-- Checkbox (Pilih banyak) -->
+                <tr>
+                    <td>Varian:</td>
+                    <td>
+                        <input type="checkbox" name="v1"> Original
+                        <input type="checkbox" name="v2"> Balado
+                    </td>
+                </tr>
+                <!-- Textarea (Pesan) -->
+                <tr>
+                    <td>Alamat:</td>
+                    <td><textarea name="alamat" rows="3"></textarea></td>
+                </tr>
+                <!-- Upload File -->
+                <tr>
+                    <td>Bukti Transfer:</td>
+                    <td><input type="file" name="bukti"></td>
+                </tr>
+                <!-- Tombol -->
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="Kirim Pesanan">
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+        <hr>
+        <p>&copy; 2026 Caesar Ramadhan</p>
+    </center>
+
+</body>
+</html>

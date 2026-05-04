@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas HTML - Caesar</title>
+</head>
+<body>
+
+    <h1>Mahasiswa STIKOM BWI Belajar HTML</h1>
+    <p>Ini tag untuk membuat paragraf dasar dalam dokumen HTML.</p>
+    <hr />
+
+    <h2>Formatting Teks</h2>
+    <p><b>Teks Tebal (Bold)</b></p>
+    <p><strong>Teks Penting (Strong)</strong></p>
+    <p><i>Teks Miring (Italic)</i></p>
+    <p><em>Teks Ditekankan (Emphasis)</em></p>
+    <p><mark>Teks Highlight</mark></p>
+    <p><small>Teks Ukuran Kecil</small></p>
+    <p><del>Teks Dicoret (Deleted)</del></p>
+    <p><ins>Teks Bergaris Bawah (Inserted)</ins></p>
+    <p>Rumus Kimia: H<sub>2</sub>O (Subscript)</p>
+    <p>Rumus Matematika: x<sup>2</sup> (Superscript)</p>
+    <p><code>print("Hello World")</code> (Code)</p>
+    <pre>Teks ini
+mempertahankan spasi
+dan baris baru.</pre>
+    <p>Tekan <kbd>Ctrl+C</kbd> untuk menyalin.</p>
+    <p>Variabel <var>x</var> dalam pemrograman.</p>
+    <p>Output sistem: <samp>Error 404</samp></p>
+    <hr />
+
+    <h2>Tag List</h2>
+    <h3>Unordered List</h3>
+    <ul>
+        <li>Caesar</li>
+        <li>Caesar</li>
+        <li>Caesar</li>
+    </ul>
+
+    <h3>Ordered List</h3>
+    <ol>
+        <li>Caesar</li>
+        <li>Caesar</li>
+        <li>Caesar</li>
+    </ol>
+
+    <h3>Definition List</h3>
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
+    </dl>
+    <hr />
+
+    <h2>Link dan Navigasi</h2>
+    <nav>
+        <a href="https://google.com" target="_blank">Buka Google di Tab Baru</a> |
+        <a href="#section-tabel">Lompat ke Tabel</a> |
+        <a href="mailto:email@example.com">Kirim Email</a>
+    </nav>
+    <hr />
+
+    <h2 id="section-tabel">Tag Tabel</h2>
+    <table border="1">
+        <caption>Data Mahasiswa</caption>
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Usia</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Caesar</td>
+                <td>19</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr />
+
+    <h2>Tag Form dan Input</h2>
+    <form action="#">
+        <fieldset>
+            <legend>Informasi Personal</legend>
+            <label for="nama">Nama Caesar:</label><br />
+            <input type="text" id="nama" placeholder="Input teks biasa" /><br /><br />
+
+            <label for="email">Email:</label><br />
+            <input type="email" id="email" /><br /><br />
+
+            <label for="pass">Password:</label><br />
+            <input type="password" id="pass" /><br /><br />
+
+            <label>Pilihan:</label><br />
+            <input type="checkbox" /> Checkbox 
+            <input type="radio" name="gender" /> Radio<br /><br />
+
+            <label>Tanggal & Angka:</label><br />
+            <input type="date" />
+            <input type="number" /><br /><br />
+
+            <label>Pesan:</label><br />
+            <textarea cols="30" rows="3"></textarea><br /><br />
+
+            <label>Pilih Jurusan:</label>
+            <select>
+                <optgroup label="Teknik">
+                    <option value="1">TI</option>
+                    <option value="2">SI</option>
+                </optgroup>
+            </select><br /><br />
+
+            <button type="submit">Kirim</button>
+            <button type="reset">Reset</button>
+        </fieldset>
+    </form>
+    <hr />
+
+    <h2>Tag Media</h2>
+    <figure>
+        <img src="anu.jpeg" alt="anu.jpeg" width="200" />
+        <figcaption>Logo Perusahaan</figcaption>
+    </figure>
+
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg" />
+        Browser Anda tidak mendukung audio.
+    </audio>
+
+
+        <a href="https://youtu.be/1vJYZmlJQSw?si=kzT-kkwloYW_Pr96">Link</a>
+   
+    <hr />
+
+    <h2>Tag Khusus dan Advanced</h2>
+    <details>
+        <summary>Klik untuk detail informasi</summary>
+        <p>Widget ini dapat dibuka atau ditutup.</p>
+    </details>
+
+    <p>Progress: <progress value="70" max="100"></progress></p>
+    <p>Meter: <meter value="6" max="10">6 dari 10</meter></p>
+
+    <blockquote>
+        "Praktik adalah kunci dalam menguasai HTML."
+    </blockquote>
+
+    <p><abbr title="HyperText Markup Language">HTML</abbr></p>
+    <p>Waktu: <time datetime="2026-01-01">1 Januari 2026</time></p>
+
+    <address>
+        Oleh: Caesar<br />
+        STIKOM PGRI Banyuwangi
+    </address>
+
+</body>
+</html>

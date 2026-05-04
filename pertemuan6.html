@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Formulir Mahasiswa</h1>
+</html>
+
+<label for="nama">Nama Lengkap:</label><br>
+<input type="text" id="nama" name="nama"><br>
+<label for="nama">Umur:</label><br>
+<input type="text" id="nama" name="Umur"><br>
+<label for="nama">Kampus:</label><br>
+<input type="text" id="nama" name="Kampus">
+
+<form>
+    <p>Pilih bahasa favorit Anda:</p>
+    <input type="radio" id="html" name="bahasa" value="HTML">
+    <label for="html">HTML</label><br>
+    <input type="radio" id="css" name="bahasa" value="CSS">
+    <label for="css">CSS</label><br>
+    <input type="radio" id="js" name="bahasa" value="JavaScript">
+    <label for="js">JavaScript</label>
+</form>
+
+<form>
+    <p>Pilih salah satu:</p>
+    <input type="checkbox" id="kendaraan1" name="kendaraan1"
+value="Sepeda">
+    <label for="kendaraan1">Saya memiliki sepeda</label><br>
+    <input type="checkbox" id="kendaraan2" name="kendaraan2"
+value="Mobil">
+    <label for="kendaraan2">Saya memiliki mobil</label>
+</form>
+
+<form action="/proses.js" autocomplete="on"><br>
+    <label for="fname">Nama Depan:</label><br>
+    <input type="text" id="fname" name="fname" placeholder="Ketik disini"><br>
+    <input type="submit" value="Kirim">
+</form><br>
+
+<label for="kota">Asal kota:</label><br>
+<select id="kota" name="kota">
+<option value="surabaya">Surabaya</option>
+<option value="jakarta">Jakarta</option>
+<option value="bandung" selected>Bandung</option>
+<option value="banyuwangi" selected>banyuwangi</option>
+<option value="malang" selected>malang</option>
+</select><br><br>
+
+<p>Pesan & Kesan:</p>
+<textarea name="pesan" rows="5" cols="40" >
+Masukkan pesan Anda di sini...
+</textarea>
+
+<form action="/kirim.js"><br>
+    <fieldset>
+        <legend>Informasi Pribadi:</legend>
+        <label for="fname" >Nama Depan:</label>
+        <input type="text" id="fname" name="fname" placeholder="nama depan kamu"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" >
+    </fieldset>
+    <input type="submit" value="Kirim">
+</form><br>
+
+<p>Pilih Browser:</p>
+<input list="browser" name="browser">
+<datalist id="browser">
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+</datalist>

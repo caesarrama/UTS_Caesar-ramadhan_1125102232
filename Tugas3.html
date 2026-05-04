@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Latihan 2 - Hero Section</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+        .hero-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .hero-container picture img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+        }
+        .hero-text h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero-container">
+        <picture>
+            <source srcset="beautiful-tropical-beach-sea-with-coconut-palm-tree-paradise-island.jpg" media="(min-width: 1024px)">
+            
+            <source srcset="pexels-arnie-chou-304906-927414.jpg" media="(min-width: 600px)">
+            
+            <img src="thi-lo-su-tee-lor-su-tak-province-thi-lo-su-waterfall-largest-waterfall-thailand.jpg" alt="Hero Background">
+        </picture>
+
+        <div class="hero-text">
+            <h1>Pertemuan 7</h1>
+            <p>Tugas Background</p>
+        </div>
+    </div>
+
+</body>
+</html>
