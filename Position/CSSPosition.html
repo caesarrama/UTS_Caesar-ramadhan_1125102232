@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <style>
+        .card {
+            margin-bottom: 20px;
+        }
+        .box {
+            width: 220px;
+            height: 250px;
+            background-color: rgb(25, 0, 255);
+            border: 5px solid black;
+            display: flex;
+            gap: 10px;
+            padding: 10px;
+        }
+        .item {
+            width: 40px;
+            height: 70px;
+            border: 3px solid rgb(255, 255, 255);
+            background: #00ff26;
+        }
+        .static .item {
+            position: static; 
+        }
+        .relative .item-relative {
+            position: relative;
+            top: 50px;
+            left: 10px;
+        }
+        .fixed .item-fixed {
+            position: fixed;
+            top: 10px;
+            left: 23px;
+        }
+        .absolute {
+            position: relative;
+        }
+        .absolute .item-absolute {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+
+        img {
+            float: left;
+            margin-right: 15px;
+            width: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Belajar CSS Position</h1>
+    
+    <section class="card">
+        <div class="box static">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+    </section>
+
+    <section class="card">
+        <div class="box relative">
+            <div class="item"></div>
+            <div class="item item-relative"></div>
+            <div class="item"></div>
+        </div>
+    </section>
+
+    <section class="card">
+        <div class="box fixed">
+            <div class="item"></div>
+            <div class="item item-fixed"></div>
+            <div class="item"></div>
+        </div>
+    </section>
+
+    <section class="card">
+        <div class="box absolute">
+            <div class="item"></div>
+            <div class="item item-absolute"></div>
+            <div class="item"></div>
+        </div>
+    </section>
+
+    <div class="container">
+        <img src="logo_stikom.png" alt="logo stikom">
+        <p>Sejarah berdirinya Sekolah Tinggi Ilmu Komputer PGRI Banyuwangi (STIKOM) di Banyuwangi tidak dapat dilepaskan dari prakarsa Perkumpulan Pembina Lembaga Pendidikan Perguruan Tinggi (PPLP-PT) PGRI Banyuwangi. STIKOM PGRI Banyuwangi telah beroperasi sejak tahun 1993 dengan status terdaftar SK Dikti No. 127/DIKTI/KEP/1993 tanggal 20 April 1993 untuk program studi Manajemen Informatika.</p>
+    </div>
+
+</body>
+</html>
